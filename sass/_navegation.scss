@@ -1,0 +1,182 @@
+nav{
+    background-color: #282828;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100px;
+    height: 15vh;
+    padding: 1vh 0px;
+}
+
+.nav_social{
+    width: 40%;
+    .media 
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    svg
+    {
+        fill: white;
+    }
+    }
+    .media:hover svg
+    {
+        fill: #E35C05;
+    }
+}
+
+.nav_logo
+{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    .logo
+    {
+        height: 100%;
+        img
+        {   
+            height: 100%;
+        }
+    }
+}
+
+.nav_sections{   
+     width: 40%;
+}
+
+.nav-links
+{
+    margin: auto 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    
+    li{
+        flex-grow: 1;
+    }
+}
+
+.link-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color:white ;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+.link-section:hover{
+    color:#E35C05 ;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+//hamburguer
+
+.hamburger{
+    display: none;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor: pointer ;
+    height: 100%;
+    .btn-hamburguer{
+        font-size: 4em;
+        color: white;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    
+    .nav-links{
+        margin-bottom: 3em;
+
+        svg{
+            fill: #818181;
+        }
+
+        svg:hover{
+            fill: #f1f1f1;
+        }
+    }
+
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+// responsive 
+
+@media screen and (max-width: 1000px) {
+    .nav_social{
+       display: none;
+    }
+    .nav_logo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 2em;
+        width: 50%;
+        .logo{
+            height: 100%;
+            width: fit-content;
+            img{
+                height: 100%;
+            }
+        }
+    }
+    .nav_sections{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        width: 50%;
+    }
+}

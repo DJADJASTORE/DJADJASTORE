@@ -1,0 +1,31 @@
+.header{
+    background: url(../IMG/banner.png) no-repeat center center;
+    background-size: cover;;
+    height: 80vh;
+    min-height: 400px;
+    margin-bottom: 5em;
+    padding: 3em 0em;
+}
+
+.header_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    svg{
+        height: 100%;
+    }
+}
+
+.brand-stroke{
+    stroke-dasharray: 4915;      
+    stroke-dashoffset: 4915;
+    animation: stroke-anim 4s ease forwards ;
+    animation-delay: 1s;
+    }
+
+@keyframes stroke-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}

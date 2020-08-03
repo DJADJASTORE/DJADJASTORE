@@ -1,0 +1,241 @@
+// Coleccion
+
+.coleccion
+{
+    background: url(../IMG/bgcoleccion.png) no-repeat center center;
+    background-size: cover;
+    height: fit-content;
+    min-height: 500px;
+    margin-bottom: 5em;
+    padding: 3em 0em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.coleccion_heading{
+    display: grid;
+    grid-template-columns: auto 20em auto  ;
+    grid-auto-rows: 20vh;
+    justify-items: stretch;
+    align-items: center;
+    .line{
+        width: 100%;
+        height: 0.1em;
+        background-color: white;
+    }
+    .heading-text 
+    {
+        h2{
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            letter-spacing: 0.05em;
+        }
+    }
+}
+
+.coleccion_options{
+    align-self: center;
+    display: grid;
+    height: fit-content;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    column-gap: 5em;
+    row-gap: 2em;
+    // justify-items: stretch;
+    align-items: center;
+    width: 80%;
+
+    .option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card{
+        width: 230px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: 0 0.4em 1em 0.3em rgba(0, 0, 0, 0.25);
+        .imagen img{
+            width: 100%;
+        }
+        .descripcion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+            p{
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+            }
+            .nombre{
+                font-size: 1.8rem;
+            }
+            .precio{
+                font-size: 2rem;
+            }
+            .precio-antes{
+                font-size: 1.5rem;
+                text-decoration: line-through;
+            }
+        }    
+    }
+
+    .options_button{
+        font-family: 'Playfair Display', serif;
+        color: black;
+        font-size: 1.5rem;
+        border: 0.1em solid #6F7474;
+        background-color: none;
+        width: 100%;
+        height: 2em;
+        margin-bottom: 2em;
+    }
+    &:hover{
+        cursor: pointer;
+        .options_button {
+            color: #E35C05;
+            border-color: #E35C05;
+            background-color: rgba($color: #000000, $alpha: 0.0);
+        }
+    }
+}
+}
+
+.option-result{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    .modal-content{
+        width: 80%;
+        height: fit-content;
+        @media screen and (max-width: 900px) {
+            & {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+.modal-body {
+    margin-top: 1em;
+    height: 85vh;
+    min-height: 400px;
+    display: flex;        
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 900px) {
+        & {
+            height: fit-content;
+            flex-direction: column;
+        }
+    }
+        div {
+            width: 50%;
+            height: 100%;
+            padding: 0px ;
+            margin: 0em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: 900px) {
+                & {
+                  padding: 0em;
+                  width: 100%;
+                }
+              }
+        }
+  }
+  
+  .galery-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .img-p{
+          width: 80%;
+      }
+      .galery{
+         display: flex;
+         flex-direction: row;
+         height: fit-content;
+         margin-top: 2em;
+         width: 80%;
+         .thumb-img{
+             flex-grow: 1;
+             height: fit-content;
+             a{
+                 width: 100%;
+                 height: 5em;
+                 img{
+                     width: 100%;
+                     height: 100%;
+                 }
+             }
+             a:focus {
+                border: 0.3em solid #E35C05;
+             }
+         }
+      }
+  }
+  
+  div.modal div.modal-backdrop {
+    z-index: 0;
+}
+ 
+body.modal-open div.modal-backdrop { 
+    z-index: 0; 
+}
+
+//contacto
+
+.contacto{
+    background: url(../IMG/bg-contactanos.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    .contacto-content{
+        height: 100%;
+        width: 100%;
+        padding: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Playfair Display', serif;
+        color: white;
+        h2{
+            font-size: 3.5rem;
+            margin-bottom: 3em;
+        }
+        .contacto-social{
+            width: 70%;
+            @media screen and (max-width: 900px) {
+                &{
+                    width: 100%;
+                }
+            }
+            .media 
+            {
+                display: flex;
+                width: 100%;
+                height: 4em;
+                justify-content: center;
+            svg
+            {
+                fill: white;
+                height: 100%;
+            }
+            }
+            .media:hover svg
+            {
+                fill: #519DC3;
+            }
+        }
+    }
+}
