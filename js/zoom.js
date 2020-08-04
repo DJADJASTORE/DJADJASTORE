@@ -1,23 +1,23 @@
+
 $("#zoom_01").elevateZoom({
   zoomType: "lens",
-  lensSize: 80, 
-   gallery:'gallery_01', 
-   cursor: 'pointer', 
-   scrollZoom : true,
-   galleryActiveClass: "active"}); 
+  lensShape: "round",
+  lensSize: 150, 
+    gallery:'gallery_01', 
+  galleryActiveClass: "active"}); 
 
    $("#zoom_02").elevateZoom({
-    zoomType: "lens", 
-    lensSize: 80,
-    scrollZoom : true,
-     gallery:'gallery_02', 
+    zoomType: "lens",
+    lensShape: "round",
+    lensSize: 150, 
+         gallery:'gallery_02', 
      cursor: 'pointer', 
      galleryActiveClass: "active"}); 
 
      $("#zoom_03").elevateZoom({
       zoomType: "lens",
-      lensSize: 80, 
-      scrollZoom : true,
+      lensShape: "round",
+      lensSize: 150, 
        gallery:'gallery_03', 
        cursor: 'pointer', 
        galleryActiveClass: "active"}); 
