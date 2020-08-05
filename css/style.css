@@ -550,7 +550,7 @@ nav {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    padding: 0em 5em;
+    padding: 0em;
     width: 100%;
   }
   .modal-body .info .descripcion p {
